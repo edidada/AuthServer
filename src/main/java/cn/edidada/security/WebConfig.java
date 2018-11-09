@@ -1,4 +1,4 @@
-package com.jimo.security;
+package cn.edidada.security;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;

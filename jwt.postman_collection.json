@@ -1,0 +1,86 @@
+{
+	"info": {
+		"_postman_id": "88805107-45d4-49ba-ad15-c7e19547929f",
+		"name": "jwt",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://127.0.0.1:8081/user/login/fds",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json;charset=UTF-8",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"username\":\"admin\",\n\"password\":\"1234\"}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8081/user/login",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8081",
+					"path": [
+						"user",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8081/success",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json;charset=UTF-8",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsInJvbGVzIjoidXNlciIsImlhdCI6MTU0MTc2MDc2MCwiZXhwIjoxNTQxNzYwODIwfQ.ZpyqDj28yTeiF6LzreaeV3gx7C5Hkpp6UKYc6G7Ir14",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Token",
+						"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsInJvbGVzIjoidXNlciIsImlhdCI6MTU0MTc2MTE5NywiZXhwIjoxNTQxNzYxMjU3fQ.i5SUrpKZbIHARVWcc1afhPCzV8XPR4XOU51MWCcYhxQ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8081/user/success",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8081",
+					"path": [
+						"user",
+						"success"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

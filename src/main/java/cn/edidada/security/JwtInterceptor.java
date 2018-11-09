@@ -1,4 +1,4 @@
-package com.jimo.security;
+package cn.edidada.security;
 
 import org.springframework.web.servlet.handler.HandlerInterceptorAdapter;
 

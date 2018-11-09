@@ -1,4 +1,4 @@
-package com.jimo.security;
+package cn.edidada.security;
 
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.ExpiredJwtException;
@@ -34,11 +34,13 @@ public class JwtUtil {
      **/
     public static void checkToken(String token) throws ServletException {
         try {
+            System.out.println(token);
             final Claims claims = Jwts.parser().setSigningKey(base64EncodedSecretKey).parseClaimsJws(token).getBody();
         } catch (ExpiredJwtException e1) {
             throw new ServletException("token expired");
-        } catch (Exception e) {
-            throw new ServletException("other token exception");
         }
+//        catch (Exception e) {
+//            throw new ServletException("other token exception");
+//        }
     }
 }

@@ -1,7 +1,7 @@
-package com.jimo.controller;
+package cn.edidada.controller;
 
-import com.jimo.model.User;
-import com.jimo.security.JwtUtil;
+import cn.edidada.model.User;
+import cn.edidada.security.JwtUtil;
 import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.ServletException;
@@ -20,7 +20,8 @@ public class UserController {
         if (!"1234".equals(pass)) {
             throw new ServletException("wrong password");
         }
-        return JwtUtil.getToken(name);
+        String token = JwtUtil.getToken(name);
+        return token;
     }
 
     @GetMapping("/success")

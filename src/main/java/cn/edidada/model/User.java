@@ -1,4 +1,4 @@
-package com.jimo.model;
+package cn.edidada.model;
 
 public class User {
 	private String username;

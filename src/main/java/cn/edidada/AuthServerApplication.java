@@ -1,4 +1,4 @@
-package com.jimo;
+package cn.edidada;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
